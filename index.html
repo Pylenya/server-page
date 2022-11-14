@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <button class="burger" data-burger>
+            <span class="burger__line"></span>
+          </button>
+          <div class="logo">
+            <a class="logo__link" href="#"
+              ><img src="./img/logo.svg" alt="logo"
+            /></a>
+            <div class="logo__text">
+              <a href="#">
+                <p>Профи<span>Сервер</span></p>
+                <small>Аренда облачных серверных мощностей</small></a
+              >
+            </div>
+          </div>
+          <nav class="header__nav" data-nav>
+            <ul class="header__list">
+              <li class="header__item"><a href="#represents">О сервисе</a></li>
+              <li class="header__item"><a href="#tariffs">Тарифы</a></li>
+              <li class="header__item">
+                <a href="#characteristics">Возможности</a>
+              </li>
+              <li class="header__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="btn btn--burger">Личный кабинет</button>
+          </nav>
+
+          <button class="btn btn--login">Личный кабинет</button>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__box">
+          <div class="hero__title">
+            <h1>Мощный компьютер всегда под рукой</h1>
+          </div>
+          <ul>
+            <li>работай в самом требовательном ПО</li>
+            <li>не задумывайся об обновлении «железа»</li>
+            <li>используй преимущества облачных технологий</li>
+          </ul>
+          <button class="btn btn--blue" data-path="one">Подключиться</button>
+        </div>
+      </div>
+    </section>
+    <section class="represents" id="represents">
+      <div class="container">
+        <div class="represents__title">
+          <h2>Что представляет собой сервис</h2>
+        </div>
+        <div class="represents__box">
+          <div class="represents__video">
+            <div class="represents__wrapper">
+              <video
+                src="./video/videoplayback.mp4"
+                controls
+                poster="./img/represents/video-poster.jpg"
+                preload="metadata"
+              ></video>
+            </div>
+          </div>
+          <div class="represents-accordion">
+            <ul class="accordion__list">
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Что это за продукт?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  транспортировка спецтехники и дорожно-строительной техники
+                  осуществляется за счёт компании
+                </div>
+              </li>
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title">Кто мы?</span>
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  транспортировка спецтехники и дорожно-строительной техники
+                  осуществляется за счёт компании
+                </div>
+              </li>
+              <li class="accordion">
+                <button class="accordion__control" aria-expanded="false">
+                  <span class="accordion__title"
+                    >Почему стоит попробовать?</span
+                  >
+                  <span class="accordion__icon"></span>
+                </button>
+                <div class="accordion__content" aria-hidden="true">
+                  транспортировка спецтехники и дорожно-строительной техники
+                  осуществляется за счёт компании
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work-efficiently">
+      <div class="container">
+        <div class="work-efficiently__title">
+          <h3>Мы поможем тебе работать эффективнее</h3>
+        </div>
+        <div class="work-efficiently__cards">
+          <div class="work-efficiently__card">
+            <div class="work-efficiently__text">
+              <p>Выполняйте задачи 2D и 3D моделирования</p>
+              <span>
+                Используйте ресурсы видеокарты для моделирования, создания
+                анимации, видео, тяжелой графики и прочего
+              </span>
+            </div>
+            <div class="work-efficiently__img">
+              <img src="./img/workEfficiently/component-1.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="work-efficiently__card second-card">
+            <div class="work-efficiently__img">
+              <img src="./img/workEfficiently/component-2.svg" alt="" />
+            </div>
+            <div class="work-efficiently__text">
+              <p>Создавай реалистичные рендеры</p>
+              <span>
+                Многопоточный рендеринг (визуализация) деталей, интерьеров и
+                зданий существенно упростит создание моделей в компьютерных
+                программах
+              </span>
+            </div>
+          </div>
+
+          <div class="work-efficiently__card">
+            <div class="work-efficiently__text">
+              <p>Обрабатывай большие массивы данных</p>
+              <span>
+                Используй ресурсы видеокарты для обработки больших массивов
+                данных, анализа Big Data, машинного обучения и аналитики
+              </span>
+            </div>
+            <div class="work-efficiently__img">
+              <img src="./img/workEfficiently/component-3.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tariffs" id="tariffs">
+      <div class="container">
+        <div class="tariffs__title">
+          <h4>Тарифы</h4>
+        </div>
+        <div class="tariffs__cards">
+          <div class="tariffs__card">
+            <div class="tariffs__card-box">
+              <div class="tariffs__card-title">
+                <h5>Демо</h5>
+              </div>
+              <div class="tariffs__card-price">
+                <span class="price">500</span><span class="rub">₽</span
+                ><span class="month">/ в месяц</span>
+              </div>
+              <div class="tariffs__card-info">
+                <p>Краткое описание входящих параметров тарифа Демо</p>
+              </div>
+              <button class="btn btn--blue" data-path="one">Подключить</button>
+            </div>
+          </div>
+          <div class="tariffs__card">
+            <div class="tariffs__card-box">
+              <div class="tariffs__card-title">
+                <h5>Оптимальный</h5>
+              </div>
+              <div class="tariffs__card-price">
+                <span class="price">800</span><span class="rub">₽</span
+                ><span class="month">/ в месяц</span>
+              </div>
+              <div class="tariffs__card-info">
+                <p>Краткое описание входящих параметров тарифа Демо</p>
+              </div>
+              <button class="btn btn--blue" data-path="one">Подключить</button>
+            </div>
+          </div>
+          <div class="tariffs__card">
+            <div class="tariffs__card-box">
+              <div class="tariffs__card-title">
+                <h5>Продвинутый</h5>
+              </div>
+              <div class="tariffs__card-price">
+                <span class="price">1500</span><span class="rub">₽</span
+                ><span class="month">/ в месяц</span>
+              </div>
+              <div class="tariffs__card-info">
+                <p>Краткое описание входящих параметров тарифа Демо</p>
+              </div>
+              <button class="btn btn--blue" data-path="one">Подключить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="characteristics" id="characteristics">
+      <div class="container">
+        <div class="characteristics__title">
+          <h5>Характеристики наших серверов</h5>
+        </div>
+        <div class="server">
+          <div class="server__box">
+            <ul class="server__characteristics">
+              <li>
+                <span>Платформа: </span> <span>HP PROLIANT DL380 GEN 10</span>
+              </li>
+              <li>
+                <span>Память для хранения: </span> <span>6.1 TB SSD</span>
+              </li>
+              <li>
+                <span>Графическая карта: </span>
+                <span>NVIDIA QUADRO RTX 8000</span>
+              </li>
+              <li>
+                <span>Оперативная память: </span>
+                <span>768 GB (12х HP 64GB DDR4)</span>
+              </li>
+              <li>
+                <span>Процессор: </span> <span>2х Intel Xeon Gold 6137M</span>
+              </li>
+            </ul>
+            <div class="server__pic">
+              <img
+                class="back"
+                src="./img/characteristics/quadro-without-casing.png"
+                alt=""
+              />
+              <img
+                class="front"
+                src="./img/characteristics/quadro.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="who-to-use">
+      <div class="container">
+        <div class="who-to-use__title">
+          <h5>Кому подойдёт сервис</h5>
+        </div>
+        <ul class="who-to-use__list">
+          <li>
+            <span>Инженерам</span>
+            <p>
+              Разрабатывай модели зданий и оборудования без задержек и долгих
+              загрузок программ, используя ресурсы облачного компьютера
+            </p>
+          </li>
+          <li>
+            <span>Фото и видеомонтажерам </span>
+            <p>
+              Не жди часы рендеринга, обрабатывайте фото и монтируйте видео в
+              профессиональных программах в считанные минуты
+            </p>
+          </li>
+          <li>
+            <span>Разработчикам приложений</span>
+            <p>
+              Имей доступ к необходимым приложениям и работайте в них даже с
+              маминого нетбука на даче
+            </p>
+          </li>
+          <li>
+            <span>Дизайнерам интерьеров и объектов</span>
+            <p>
+              Отрисовывай, создавай и рендери качественные объекты с помощью
+              последнего поколения специализированных видеокарт
+            </p>
+          </li>
+          <li>
+            <span>Компаниям с удалёнными сотрудниками</span>
+            <p>
+              Выделим для вас отдельные директории, где сотрудники смогут
+              заниматься совместной работой с файлами
+            </p>
+          </li>
+          <li>
+            <span>Компаниям без собственного администрирования</span>
+            <p>
+              Выделим для вас отдельные мощности, где наши технические инженеры
+              возьмут на себя обязательства по администрированию сетей
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="how-to-start">
+      <div class="container">
+        <div class="how-to-start__title">
+          <h5>Как начать пользоваться</h5>
+        </div>
+        <div class="instruction">
+          <div class="instruction__cards">
+            <div class="instruction__card">
+              <div class="instruction__card-box">
+                <div class="instruction__card-title">
+                  <h6>1. Зарегистрируйся</h6>
+                </div>
+                <div class="instruction__card-img">
+                  <img src="./img/howToStart/component-1.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="instruction__card">
+              <div class="instruction__card-box">
+                <div class="instruction__card-title">
+                  <h6>2. Выбери тариф</h6>
+                </div>
+                <div class="instruction__card-img">
+                  <img src="./img/howToStart/component-2.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="instruction__card">
+              <div class="instruction__card-box">
+                <div class="instruction__card-title">
+                  <h6>3. Оплати услугу</h6>
+                </div>
+                <div class="instruction__card-img">
+                  <img src="./img/howToStart/component-3.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="instruction__card">
+              <div class="instruction__card-box">
+                <div class="instruction__card-title">
+                  <h6>4. Получи доступ</h6>
+                </div>
+                <div class="instruction__card-img">
+                  <img src="./img/howToStart/component-4.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          <h5>Заинтересовал сервис</h5>
+        </div>
+        <div class="box contacts__box">
+          <div class="box__left">
+            <div class="box__left-title">
+              <h6>Наши контакты</h6>
+            </div>
+            <span> <a href="tel:+79643321233">+7 (964) 332-12-33</a></span>
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/whatsapp.svg" alt="whatsapp"
+              /></a>
+              <a href="#"
+                ><img src="./img/icons/telegram.svg" alt="telegram"
+              /></a>
+            </div>
+            <span
+              ><a href="mailto:info@profiserver.ru"
+                >info@profiserver.ru</a
+              ></span
+            >
+            <span>г. Санкт-Петербург, Площадь Чернышевского д. 5</span>
+          </div>
+          <div class="box__right">
+            <form action="/" method="get" class="form" enctype="text/plain">
+              <input type="text" name="username" placeholder="Имя" required />
+              <input
+                type="tel"
+                name="telephone"
+                placeholder="Номер телефона"
+                required
+              />
+              <button type="submit" class="btn btn--blue">
+                Заказать звонок
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <div class="questions__title">
+          <h5>Часто задаваемые вопросы</h5>
+        </div>
+        <div class="questions__box">
+          <ul class="accordion__list">
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Смогу ли я в любой момент забрать свою базу из облака?
+                </span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Без проблем! Вы сможете забрать базу даже если вели в ней работу
+                в течение бесплатного тестового периода.
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Могу ли я вносить изменения и дорабатывать свою базу?
+                </span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                На тарифах «Оптимальный» и «Продвинутый» можно дорабатывать базу
+                без ограничений.
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Как выполнить резервное копирование базы?</span
+                >
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Резервное копирование типовыми средствами настраивать нет
+                необходимости, так как оно выполняется на сервере по расписанию,
+                ежедневно, в течение 7 дней.
+              </div>
+            </li>
+          </ul>
+          <ul class="accordion__list">
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title">Где находится ваш ЦОД?</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                ЦОД в Москве расположен по адресу: м. Нагорная, Электролитный
+                проезд, дом 3, строение 2
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Можно ли организовать персональный туннель до офиса?</span
+                >
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Да, это возможно. Наши специалисты многократно проделывали
+                данную операцию, включающую не просто выделение отдельного
+                канала, но и настройку портов и организацию удаленных рабочих
+                мест.
+              </div>
+            </li>
+            <li class="accordion">
+              <button class="accordion__control" aria-expanded="false">
+                <span class="accordion__title"
+                  >Можно ли увеличить объём рабочей станции?</span
+                >
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                Да, увеличение внутреннего хранилища обсуждается с каждым
+                клиентом лично.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="applications">
+      <div class="container">
+        <div class="applications__title">
+          <h5>Пользуйся приложениями без затруднений</h5>
+        </div>
+      </div>
+      <div class="ticker">
+        <div class="ticker__wrapper">
+          <div>
+            <div class="ticker__item">
+              <img src="./img/applications/archicad.png" alt="archicad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autocad.png" alt="autocad" />
+            </div>
+            <div class="ticker__item">
+              <img
+                src="./img/applications/autodesk-revit.png"
+                alt="autodesk-revit"
+              />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/compass.png" alt="compass" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/lira-soft.png" alt="lira-soft" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/maple.png" alt="maple" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/nanocad.png" alt="nanocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/renga.png" alt="renga" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/sofistik.png" alt="sofistik" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/solidworks.png" alt="solidworks" />
+            </div>
+            <div class="ticker__item">
+              <img
+                src="./img/applications/tekla-structures.png"
+                alt="tekla-structures"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="ticker__item">
+              <img src="./img/applications/archicad.png" alt="archicad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autocad.png" alt="autocad" />
+            </div>
+            <div class="ticker__item">
+              <img
+                src="./img/applications/autodesk-revit.png"
+                alt="autodesk-revit"
+              />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/compass.png" alt="compass" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/lira-soft.png" alt="lira-soft" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/maple.png" alt="maple" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/nanocad.png" alt="nanocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/renga.png" alt="renga" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/sofistik.png" alt="sofistik" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/solidworks.png" alt="solidworks" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/tekla-structures.png" alt="tekla" />
+            </div>
+          </div>
+        </div>
+        <div class="ticker__wrapper ticker__wrapper-second">
+          <div>
+            <div class="ticker__item">
+              <img src="./img/applications/archicad.png" alt="archicad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autocad.png" alt="autocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autodesk-revit.png" alt="autodesk" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/compass.png" alt="compass" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/lira-soft.png" alt="lira" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/maple.png" alt="maple" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/nanocad.png" alt="nanocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/renga.png" alt="renga" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/sofistik.png" alt="sofistik" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/solidworks.png" alt="solidworks" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/tekla-structures.png" alt="tekla" />
+            </div>
+          </div>
+          <div>
+            <div class="ticker__item">
+              <img src="./img/applications/archicad.png" alt="archicad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autocad.png" alt="autocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/autodesk-revit.png" alt="autodesk" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/compass.png" alt="compass" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/lira-soft.png" alt="lira" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/maple.png" alt="maple" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/nanocad.png" alt="nanocad" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/renga.png" alt="renga" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/sofistik.png" alt="sofistik" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/solidworks.png" alt="solidworks" />
+            </div>
+            <div class="ticker__item">
+              <img src="./img/applications/tekla-structures.png" alt="tekla" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <a class="footer__logo" href="#"
+            ><img src="./img/logo.svg" alt="logo" />
+            <p>Профи<span>Сервер</span></p></a
+          >
+          <ul>
+            <li><a href="#represents">О сервисе</a></li>
+            <li><a href="#tariffs">Тарифы</a></li>
+            <li><a href="#characteristics">Возможности</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__desc">
+          <ul>
+            <li>©2021 «ПрофиСервер»</li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <section class="modals">
+      <div class="modals__overlay">
+        <div class="modal modal-1" data-target="one">
+          <div class="modal__box">
+            <div class="modal__title"><h6>Заказать звонок</h6></div>
+            <!-- <form> -->
+            <div class="modal__inputs">
+              <input type="text" name="username" placeholder="Имя" />
+              <input type="tel" name="user-tel" placeholder="Номер телефона" />
+            </div>
+            <button class="btn btn--blue btn--modal" data-path="two">
+              Заказать звонок
+            </button>
+            <!-- </form> -->
+          </div>
+        </div>
+        <div class="modal modal-2" data-target="two">
+          <div class="modal__box">
+            <div class="modal__title">Заявка успешно оформлена</div>
+            <p>Менеджер свяжется с вами в ближайшее время</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
